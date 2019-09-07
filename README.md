@@ -16,8 +16,8 @@ node js:
 
 ```
 API keys:
-* Sign up for a [Plaid API key] (https://plaid.com/)
-* Get a [firebase API key] (https://firebase.google.com/)
+* Sign up for a [Plaid API key](https://plaid.com/)
+* Get a [firebase API key](https://firebase.google.com/)
 
 ### Usage
 
