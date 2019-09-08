@@ -6,7 +6,7 @@ This application allows users to talk or text with an assitant to discuss bankin
 * "My Bank Balance"
 * "Balance in my savings account"
 * "Balance in my 401K account"
-* Transactions from July 7 2014 to September 7 2014"
+* "Transactions from July 7 2014 to September 7 2014"
 
 ### How it works
 
