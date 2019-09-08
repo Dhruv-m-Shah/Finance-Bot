@@ -13,13 +13,16 @@ This application allows users to talk or text with an assitant to discuss bankin
 ### Installing
 node js:
 ```
-
+npm install plaid
+npm install --save firebase
 ```
 API keys:
 * Sign up for a [Plaid API key](https://plaid.com/)
 * Get a [firebase API key](https://firebase.google.com/)
 
 ### Usage
+
+Currently can only be used on Dialog Flow's test application.
 
 
 
