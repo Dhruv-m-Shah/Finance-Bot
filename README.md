@@ -22,7 +22,13 @@ API keys:
 
 ### Usage
 
-Currently can only be used on Dialog Flow's test application.
+Can be used on:
+
+* Twitter
+* Slack
+* Dialogflow's text interface
+* Facebook Messenger 
+* Twitter
 
 
 
