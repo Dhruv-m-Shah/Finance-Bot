@@ -1,7 +1,6 @@
 // See https://github.com/dialogflow/dialogflow-fulfillment-nodejs
 // for Dialogflow fulfillment library docs, samples, and to report issues
 'use strict';
- 
 const functions = require('firebase-functions');
 const {WebhookClient} = require('dialogflow-fulfillment');
 const {Card, Suggestion} = require('dialogflow-fulfillment');
@@ -11,7 +10,6 @@ admin.initializeApp({
   credential: admin.credential.applicationDefault(),
   databaseURL: "ws://financial-advisor-ftvfvy.firebaseio.com"
 });
-
 function handleSaveToDB(agent){
   agent.add("hello");
   console.log("ADADS");
@@ -153,8 +151,17 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     agent.add(`I didn't understand`);
     agent.add(`I'm sorry, can you try again?`);
   }
+  
   function setmybudget(agent){
     agent.add("Enter budget name");
+  }
+  function BudgetName(agent){
+  	var Budget_Name = agent.query;
+    agent.add("Enter budget time");
+  }
+  function BudgetTime(agent){
+    var Budget_time = agent.query();
+    agent.add("Enter how you wish to budget your money. Example: Utilities: $1000, Entertainment: $3000, Electronics: $500 ...")
   }
   function Typeofbank(agent){
     var d = agent.query;
@@ -210,7 +217,8 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   intentMap.set('Balance', balance);
   intentMap.set('Typeofbank', Typeofbank);
   intentMap.set('SetmyBudget', setmybudget);
-  intentMap.set('EnterCategory', EnterCategory);
+  intentMap.set('BudgetName', BudgetName);
+  intentMap.set('BudgetTime', BudgetTime);
   // intentMap.set('your intent name here', yourFunctionHandler);
   // intentMap.set('your intent name here', googleAssistantHandler);
   agent.handleRequest(intentMap);
