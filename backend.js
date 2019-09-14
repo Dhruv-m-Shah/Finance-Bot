@@ -1,6 +1,6 @@
 //PLAID authentication and setup
 const plaid = require('plaid');
-const plaidClient = new plaid.Client('5d4c672a55135b001480aef3', '16da5775dba801cfb29199fd0166d2', 'ad517ff22078447f751a71696947ba', plaid.environments.sandbox, {
+const plaidClient = new plaid.Client('', '', '', plaid.environments.sandbox, {
   version: '2018-05-22'
 });
 //PLAID authentication and setup
