@@ -9,7 +9,7 @@ This application allows users to talk or text with an assitant to discuss bankin
 * "Transactions from July 7 2014 to September 7 2014"
 
 ### How it works
-
+Every time a user transaction is made, the PLAID API updates the firebase server. This server is then called by DialogFlow to awnser user queries.
 ### Installing
 node js:
 ```
