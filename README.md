@@ -17,7 +17,7 @@ npm install plaid
 npm install --save firebase
 ```
 API keys:
-* Sign up for a [Plaid API key](https://plaid.com/)
+* Sign up for a [Plaid API key](https://plaid.com/products/auth/)
 * Get a [firebase API key](https://firebase.google.com/)
 
 ### Usage
